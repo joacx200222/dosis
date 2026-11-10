@@ -1,0 +1,78 @@
+# Medicine ingredient (DDInter English name) -> TripSit combos.json group.
+# Third column "approx" = the medicine is not literally in that group; its group's data is used as a reference
+# (e.g. SNRIs use the SSRI row for serotonin risk). The app says so in the warning text.
+# ingredient	tripsit_group	approx
+Fluoxetine	ssris
+Sertraline	ssris
+Paroxetine	ssris
+Citalopram	ssris
+Escitalopram	ssris
+Fluvoxamine	ssris
+Vortioxetine	ssris
+Vilazodone	ssris
+Venlafaxine	ssris	approx
+Desvenlafaxine	ssris	approx
+Duloxetine	ssris	approx
+Milnacipran	ssris	approx
+Levomilnacipran	ssris	approx
+Clomipramine	ssris	approx
+Phenelzine	maois
+Tranylcypromine	maois
+Isocarboxazid	maois
+Selegiline	maois
+Rasagiline	maois
+Safinamide	maois
+Linezolid	maois	approx
+Morphine	opioids
+Codeine	opioids
+Oxycodone	opioids
+Hydrocodone	opioids
+Hydromorphone	opioids
+Oxymorphone	opioids
+Fentanyl	opioids
+Methadone	opioids
+Buprenorphine	opioids
+Tapentadol	opioids
+Meperidine	opioids
+Dihydrocodeine	opioids
+Diamorphine	opioids
+Tramadol	tramadol
+Alprazolam	benzodiazepines
+Clonazepam	benzodiazepines
+Diazepam	benzodiazepines
+Lorazepam	benzodiazepines
+Midazolam	benzodiazepines
+Clobazam	benzodiazepines
+Chlordiazepoxide	benzodiazepines
+Clorazepic acid	benzodiazepines
+Temazepam	benzodiazepines
+Triazolam	benzodiazepines
+Oxazepam	benzodiazepines
+Flurazepam	benzodiazepines
+Estazolam	benzodiazepines
+Zolpidem	benzodiazepines	approx
+Zopiclone	benzodiazepines	approx
+Eszopiclone	benzodiazepines	approx
+Lithium carbonate	lithium
+Dextromethorphan	dextromethorphan
+Diphenhydramine	diphenhydramine
+Dimenhydrinate	diphenhydramine
+Doxylamine	diphenhydramine	approx
+Hydroxyzine	diphenhydramine	approx
+Chlorpheniramine	diphenhydramine	approx
+Promethazine	diphenhydramine	approx
+Pregabalin	pregabalin
+Gabapentin	pregabalin	approx
+Amphetamine	amphetamines
+Dextroamphetamine	amphetamines
+Lisdexamfetamine	amphetamines
+Metamfetamine	amphetamines
+Methylphenidate	amphetamines	approx
+Dexmethylphenidate	amphetamines	approx
+Phentermine	amphetamines	approx
+Ketamine	ketamine
+Esketamine	ketamine
+Sodium oxybate	ghb/gbl
+Dronabinol	cannabis
+Nabilone	cannabis
+Caffeine	caffeine

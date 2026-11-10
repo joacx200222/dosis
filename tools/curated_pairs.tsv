@@ -1,0 +1,88 @@
+# dosis curated drug-drug rules.
+# Why: the public DDInter CSV downloads only cover ATC groups A, B, D, H, L, P, R and V, so many pairs
+# between cardiovascular (C), nervous-system (N), anti-infective (J) and genito-urinary (G) medicines
+# are missing (e.g. sertraline + tramadol, sildenafil + nitroglycerin). These rules fill the best-known gaps.
+# General reference, not exhaustive. The final level is the worst of this table and DDInter.
+#
+# Groups:  @NAME<TAB>Ingredient|Ingredient|...   (DDInter English names; may include other @groups)
+# Rules:   A list or @group<TAB>B list or @group<TAB>major|moderate|minor<TAB>descripción
+
+@SSRI	Fluoxetine|Sertraline|Paroxetine|Citalopram|Escitalopram|Fluvoxamine|Vortioxetine|Vilazodone
+@SNRI	Venlafaxine|Desvenlafaxine|Duloxetine|Milnacipran|Levomilnacipran
+@TCA	Amitriptyline|Clomipramine|Imipramine|Nortriptyline|Doxepin|Desipramine
+@MAOI	Phenelzine|Tranylcypromine|Isocarboxazid|Selegiline|Rasagiline|Safinamide|Linezolid
+@TRIPTAN	Sumatriptan|Rizatriptan|Zolmitriptan|Naratriptan|Eletriptan|Almotriptan|Frovatriptan
+@SEROTONERGIC_OPIOID	Tramadol|Tapentadol|Meperidine|Methadone|Fentanyl|Dextromethorphan
+@SEROTONERGIC	@SSRI|@SNRI|@TCA|@TRIPTAN|@SEROTONERGIC_OPIOID|Trazodone|Mirtazapine|Buspirone|Lithium carbonate|St. John's Wort|Ondansetron
+@OPIOID	Morphine|Codeine|Oxycodone|Hydrocodone|Hydromorphone|Oxymorphone|Fentanyl|Methadone|Buprenorphine|Tapentadol|Tramadol|Meperidine|Dihydrocodeine|Diamorphine
+@BENZO	Alprazolam|Clonazepam|Diazepam|Lorazepam|Midazolam|Clobazam|Chlordiazepoxide|Clorazepic acid|Temazepam|Triazolam|Oxazepam|Flurazepam|Estazolam
+@ZDRUG	Zolpidem|Zopiclone|Eszopiclone
+@GABAPENTINOID	Gabapentin|Pregabalin
+@SEDATING_ANTIHISTAMINE	Diphenhydramine|Chlorpheniramine|Hydroxyzine|Promethazine|Doxylamine|Dimenhydrinate
+@ANTIPSYCHOTIC_SEDATING	Quetiapine|Olanzapine|Clozapine|Chlorpromazine
+@NITRATE	Nitroglycerin|Isosorbide mononitrate|Isosorbide dinitrate|Amyl Nitrite
+@PDE5	Sildenafil|Tadalafil|Vardenafil|Avanafil
+@ACEI	Enalapril|Lisinopril|Captopril|Ramipril|Perindopril|Quinapril|Benazepril|Fosinopril|Trandolapril
+@ARB	Losartan|Valsartan|Irbesartan|Candesartan|Telmisartan|Olmesartan
+@K_SPARING	Spironolactone|Eplerenone|Amiloride|Triamterene|Potassium chloride
+@THIAZIDE_LOOP	Hydrochlorothiazide|Chlorthalidone|Indapamide|Furosemide|Torasemide|Bumetanide
+@NSAID	Ibuprofen|Naproxen|Diclofenac|Ketorolac|Ketoprofen|Meloxicam|Celecoxib|Etoricoxib|Indometacin|Piroxicam|Acetylsalicylic acid
+@BETA_BLOCKER	Propranolol|Metoprolol|Atenolol|Carvedilol|Bisoprolol|Nebivolol|Labetalol|Nadolol
+@NONDHP_CCB	Verapamil|Diltiazem
+@QT	Azithromycin|Clarithromycin|Erythromycin|Levofloxacin|Ciprofloxacin|Moxifloxacin|Haloperidol|Quetiapine|Citalopram|Escitalopram|Ondansetron|Amiodarone|Sotalol|Methadone|Hydroxychloroquine|Chloroquine|Domperidone|Fluconazole|Ziprasidone
+@INDUCER	Carbamazepine|Phenytoin|Phenobarbital|Oxcarbazepine|Topiramate|Rifampicin|Rifabutin|St. John's Wort|Modafinil
+@HORMONAL_CONTRACEPTIVE	Ethinylestradiol|Levonorgestrel|Drospirenone|Norethisterone|Desogestrel|Etonogestrel|Medroxyprogesterone acetate
+@ANTICOAGULANT	Warfarin|Rivaroxaban|Apixaban|Dabigatran etexilate|Edoxaban|Heparin|Enoxaparin
+@ANTIPLATELET	Clopidogrel|Acetylsalicylic acid|Ticagrelor|Prasugrel
+
+@MAOI	@SEROTONERGIC	major	IMAO + otro serotoninérgico: riesgo de síndrome serotoninérgico (fiebre, rigidez, confusión). Combinación contraindicada.
+@MAOI	Bupropion|Methylphenidate|Amphetamine|Dextroamphetamine|Lisdexamfetamine|Pseudoephedrine|Phenylephrine|Ephedrine|Atomoxetine|Levodopa	major	IMAO + estimulante: riesgo de crisis hipertensiva.
+@SSRI|@SNRI	@SEROTONERGIC_OPIOID	major	Riesgo de síndrome serotoninérgico; con tramadol también más riesgo de convulsiones.
+@SSRI|@SNRI	@TRIPTAN|@TCA|Trazodone|Lithium carbonate|Buspirone	moderate	Se suma el efecto serotoninérgico: vigila síntomas como agitación, temblor o fiebre.
+@SSRI|@SNRI	@SSRI|@SNRI	major	Dos antidepresivos serotoninérgicos juntos: riesgo de síndrome serotoninérgico.
+@SSRI|@SNRI	@NSAID|@ANTICOAGULANT|@ANTIPLATELET	moderate	Más riesgo de sangrado, sobre todo estomacal.
+Bupropion	@SSRI|@SNRI|@TCA|Tramadol	moderate	Más riesgo de convulsiones; algunos antidepresivos suben su nivel.
+@NITRATE	@PDE5|Riociguat	major	Nitrato + sildenafilo/tadalafilo: caída brusca de la presión. Combinación contraindicada.
+@OPIOID	@BENZO|@ZDRUG	major	Depresión respiratoria y sedación profunda: riesgo de sobredosis.
+@OPIOID	@GABAPENTINOID|@SEDATING_ANTIHISTAMINE|@ANTIPSYCHOTIC_SEDATING	major	Se suma la sedación y puede deprimir la respiración.
+@OPIOID	@OPIOID	major	Dos opioides juntos: riesgo de sobredosis.
+@BENZO|@ZDRUG	@GABAPENTINOID|@SEDATING_ANTIHISTAMINE|@ANTIPSYCHOTIC_SEDATING|@BENZO|@ZDRUG	moderate	Se suma la sedación: somnolencia, caídas, menos reflejos.
+@ACEI|@ARB	@K_SPARING	moderate	Más riesgo de potasio alto; requiere controles.
+@ACEI	@ARB	moderate	Doble bloqueo: más riesgo de potasio alto, presión baja y daño renal.
+@NSAID	@ACEI|@ARB|@THIAZIDE_LOOP|@K_SPARING	moderate	El antiinflamatorio reduce el efecto sobre la presión y puede dañar el riñón (más con diuréticos).
+@NSAID	@NSAID	major	Dos antiinflamatorios juntos: más riesgo de úlcera, sangrado y daño renal.
+Lithium carbonate	@ACEI|@ARB|@THIAZIDE_LOOP|@NSAID	major	Sube el nivel de litio en sangre: riesgo de intoxicación.
+@BETA_BLOCKER	@NONDHP_CCB	major	Pulso muy lento y bloqueo cardíaco.
+Digoxin	Amiodarone|Verapamil|Clarithromycin|Dronedarone	major	Sube el nivel de digoxina: riesgo de arritmias.
+@QT	@QT	moderate	Ambos alargan el intervalo QT del corazón: más riesgo de arritmias.
+Citalopram|Escitalopram	Amiodarone|Sotalol|Methadone|Haloperidol|Hydroxychloroquine|Domperidone	major	Alargamiento importante del QT: riesgo de arritmia grave.
+@INDUCER	@HORMONAL_CONTRACEPTIVE	major	Puede cortar el efecto anticonceptivo: usa otro método.
+@INDUCER	@ANTICOAGULANT	major	Baja el efecto anticoagulante: riesgo de trombosis.
+Metronidazole|Tinidazole	Disulfiram	major	Riesgo de psicosis y confusión.
+Clarithromycin|Erythromycin|Itraconazole|Ketoconazole|Ritonavir	Simvastatin|Lovastatin|Atorvastatin	major	Sube mucho el nivel de la estatina: riesgo de daño muscular.
+Clopidogrel	Omeprazole|Esomeprazole	moderate	El omeprazol puede reducir el efecto del clopidogrel; el pantoprazol interfiere menos.
+Allopurinol	Azathioprine|Mercaptopurine	major	Sube a niveles tóxicos el inmunosupresor.
+Methotrexate	Trimethoprim|Sulfamethoxazole|@NSAID	major	Sube el nivel de metotrexato: toxicidad en sangre y riñón.
+Tramadol	Carbamazepine	moderate	Menos efecto analgésico y más riesgo de convulsiones.
+Ciprofloxacin|Fluvoxamine	Tizanidine|Theophylline|Clozapine	major	Sube mucho el nivel del segundo medicamento.
+Sildenafil|Tadalafil|Vardenafil	Tamsulosin|Doxazosin|Terazosin|Alfuzosin	moderate	Se suma la bajada de presión: mareo al pararte.
+Levothyroxine	Calcium carbonate|Ferrous sulfate anhydrous|Omeprazole|Sucralfate	moderate	Reduce la absorción de la levotiroxina: sepáralos al menos 4 h.
+
+# --- VIH: TLD (tenofovir disoproxil + lamivudina + dolutegravir) ---
+# Antivirals are ATC group J, which the public DDInter CSVs leave out, so these come from the
+# product labels / HIV interaction guides. DDInter already covers dolutegravir + antacids, calcium,
+# iron, magnesium, zinc and sucralfate (grave).
+@NEPHROTOXIC	Gentamicin|Amikacin|Tobramycin|Cidofovir|Foscarnet|Pentamidine|Acyclovir|Valaciclovir|Ganciclovir|Lithium carbonate
+@DTG_INDUCER	Rifampicin|Rifapentine|Carbamazepine|Phenytoin|Phenobarbital|Oxcarbazepine|St. John's Wort
+Dolutegravir	Dofetilide	major	El dolutegravir sube el nivel de dofetilida: riesgo de arritmia grave. Combinación contraindicada.
+Dolutegravir	@DTG_INDUCER	major	Baja el nivel de dolutegravir y puede hacer que el tratamiento del VIH deje de funcionar; a veces se ajusta la dosis (p. ej. dos veces al día con rifampicina o carbamazepina). Consulta a tu médico.
+Dolutegravir	Efavirenz|Nevirapine|Etravirine	moderate	Baja el nivel de dolutegravir; tu médico ajusta la dosis si se combinan.
+Dolutegravir	Metformin	moderate	El dolutegravir sube el nivel de metformina; puede necesitar una dosis menor.
+Tenofovir disoproxil	@NSAID	moderate	Antiinflamatorios seguidos o en dosis altas junto al tenofovir aumentan el riesgo de daño al riñón.
+Tenofovir disoproxil	@NEPHROTOXIC	moderate	Ambos pueden afectar el riñón; suelen pedir controles de función renal.
+Tenofovir disoproxil	Ledipasvir|Velpatasvir|Sofosbuvir	moderate	Sube el nivel de tenofovir; vigila la función renal.
+Tenofovir disoproxil	Adefovir dipivoxil|Tenofovir alafenamide	major	No se combinan: son el mismo tipo de medicamento.
+Tenofovir disoproxil	Didanosine	major	Combinación no recomendada: más toxicidad y peor respuesta.
+Lamivudine	Emtricitabine	major	No se combinan: son el mismo tipo de medicamento (duplicado).
+Lamivudine	Cladribine	major	Evitar: la lamivudina puede reducir el efecto de la cladribina.
+Lamivudine	Trimethoprim|Sulfamethoxazole	minor	El cotrimoxazol sube un poco el nivel de lamivudina; normalmente no requiere cambios.

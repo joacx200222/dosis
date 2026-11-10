@@ -1,0 +1,200 @@
+# Spanish names and brands (Peru / Latin America) for the "¿Qué tomaste?" search.
+# english (DDInter name; a name missing from DDInter is still added, just without interaction pairs)	nombre en español	alias o marcas separados por |
+# A brand listed on several lines (e.g. Augmentin) maps to all of those ingredients.
+Acetaminophen	Paracetamol	Acetaminofén|Panadol|Tylenol|Tempra|Doloral|Kitadol
+Ibuprofen	Ibuprofeno	Advil|Motrin|Actron|Dolorsin
+Naproxen	Naproxeno	Apronax|Aleve|Naprosyn|Naproxeno sódico
+Diclofenac	Diclofenaco	Voltaren|Cataflam|Dolo-Neurobion
+Ketorolac	Ketorolaco	Toradol|Dolten
+Acetylsalicylic acid	Aspirina	Ácido acetilsalicílico|AAS|Bayaspirina|Aspirina 100
+Celecoxib	Celecoxib	Celebrex
+Meloxicam	Meloxicam	Mobic
+Ketoprofen	Ketoprofeno	Profenid
+Metamizole	Metamizol	Dipirona|Novalgina|Repriman|Antalgina|Buscapina Compositum
+Tramadol	Tramadol	Tramal
+Codeine	Codeína
+Morphine	Morfina
+Oxycodone	Oxicodona	OxyContin
+Fentanyl	Fentanilo
+Methadone	Metadona
+Buprenorphine	Buprenorfina
+Loratadine	Loratadina	Clarityne|Claritin
+Desloratadine	Desloratadina	Aerius
+Cetirizine	Cetirizina	Zyrtec
+Levocetirizine	Levocetirizina	Xyzal
+Fexofenadine	Fexofenadina	Allegra
+Chlorpheniramine	Clorfenamina	Clorfeniramina|Clorfenamina maleato|Antigripal
+Diphenhydramine	Difenhidramina	Benadryl
+Dimenhydrinate	Dimenhidrinato	Gravol|Dramamine
+Hydroxyzine	Hidroxicina	Atarax
+Doxylamine	Doxilamina
+Promethazine	Prometazina	Fenergan
+Omeprazole	Omeprazol	Losec
+Esomeprazole	Esomeprazol	Nexium
+Pantoprazole	Pantoprazol
+Lansoprazole	Lansoprazol
+Ranitidine	Ranitidina
+Famotidine	Famotidina
+Metoclopramide	Metoclopramida	Plasil
+Domperidone	Domperidona	Motilium
+Ondansetron	Ondansetrón	Zofran
+Loperamide	Loperamida	Imodium
+Scopolamine	Hioscina	Buscapina|Butilbromuro de hioscina|Escopolamina|Buscapina Compositum
+Simethicone	Simeticona	Gas-X|Luftal|Gaseovet
+Bismuth subsalicylate	Subsalicilato de bismuto	Pepto-Bismol|Bismutol
+Amoxicillin	Amoxicilina	Augmentin|Amoxil
+Clavulanic acid	Ácido clavulánico	Augmentin|Clavulanato
+Azithromycin	Azitromicina	Zithromax
+Clarithromycin	Claritromicina	Klaricid
+Ciprofloxacin	Ciprofloxacino	Cipro
+Levofloxacin	Levofloxacino
+Moxifloxacin	Moxifloxacino	Avelox
+Cephalexin	Cefalexina	Keflex
+Ceftriaxone	Ceftriaxona
+Cefuroxime	Cefuroxima
+Doxycycline	Doxiciclina
+Tetracycline	Tetraciclina
+Metronidazole	Metronidazol	Flagyl
+Tinidazole	Tinidazol
+Nitrofurantoin	Nitrofurantoína	Macrodantina
+Sulfamethoxazole	Sulfametoxazol	Bactrim|Cotrimoxazol
+Trimethoprim	Trimetoprima	Bactrim|Cotrimoxazol
+Fluconazole	Fluconazol
+Ivermectin	Ivermectina
+Albendazole	Albendazol	Zentel
+Mebendazole	Mebendazol
+Nitazoxanide	Nitazoxanida	Colufase
+Acyclovir	Aciclovir	Zovirax
+Oseltamivir	Oseltamivir	Tamiflu
+Prednisone	Prednisona
+Prednisolone	Prednisolona
+Dexamethasone	Dexametasona	Decadron
+Betamethasone	Betametasona	Celestone
+Hydrocortisone	Hidrocortisona
+Salbutamol	Salbutamol	Ventolin|Albuterol
+Budesonide	Budesonida	Pulmicort
+Fluticasone	Fluticasona	Flixotide
+Montelukast	Montelukast	Singulair
+Metformin	Metformina	Glucophage
+Glyburide	Glibenclamida
+Glimepiride	Glimepirida	Amaryl
+Sitagliptin	Sitagliptina	Januvia
+Empagliflozin	Empagliflozina	Jardiance
+Insulin glargine	Insulina glargina	Lantus
+Insulin human	Insulina humana
+Atorvastatin	Atorvastatina	Lipitor
+Simvastatin	Simvastatina
+Rosuvastatin	Rosuvastatina	Crestor
+Losartan	Losartán	Cozaar
+Enalapril	Enalapril
+Captopril	Captopril
+Lisinopril	Lisinopril
+Valsartan	Valsartán	Diovan
+Amlodipine	Amlodipino	Norvasc
+Nifedipine	Nifedipino	Adalat
+Hydrochlorothiazide	Hidroclorotiazida
+Furosemide	Furosemida	Lasix
+Spironolactone	Espironolactona	Aldactone
+Atenolol	Atenolol
+Metoprolol	Metoprolol
+Propranolol	Propranolol
+Carvedilol	Carvedilol
+Bisoprolol	Bisoprolol	Concor
+Warfarin	Warfarina	Coumadin
+Clopidogrel	Clopidogrel	Plavix
+Rivaroxaban	Rivaroxabán	Xarelto
+Apixaban	Apixabán	Eliquis
+Digoxin	Digoxina
+Amiodarone	Amiodarona
+Nitroglycerin	Nitroglicerina
+Levothyroxine	Levotiroxina	Eutirox|Synthroid|T4
+Sertraline	Sertralina	Zoloft|Altruline
+Fluoxetine	Fluoxetina	Prozac
+Escitalopram	Escitalopram	Lexapro
+Citalopram	Citalopram
+Paroxetine	Paroxetina	Paxil
+Fluvoxamine	Fluvoxamina
+Venlafaxine	Venlafaxina	Efexor
+Desvenlafaxine	Desvenlafaxina	Pristiq
+Duloxetine	Duloxetina	Cymbalta
+Amitriptyline	Amitriptilina	Tryptanol
+Clomipramine	Clomipramina	Anafranil
+Mirtazapine	Mirtazapina	Remeron
+Trazodone	Trazodona
+Bupropion	Bupropión	Wellbutrin
+Vortioxetine	Vortioxetina	Brintellix
+Alprazolam	Alprazolam	Xanax
+Clonazepam	Clonazepam	Rivotril
+Diazepam	Diazepam	Valium
+Lorazepam	Lorazepam	Ativan
+Bromazepam	Bromazepam	Lexotan
+Midazolam	Midazolam	Dormicum
+Zolpidem	Zolpidem	Stilnox
+Quetiapine	Quetiapina	Seroquel
+Olanzapine	Olanzapina	Zyprexa
+Risperidone	Risperidona	Risperdal
+Aripiprazole	Aripiprazol	Abilify
+Haloperidol	Haloperidol
+Clozapine	Clozapina	Leponex
+Lithium carbonate	Litio	Carbonato de litio
+Valproic acid	Ácido valproico	Valproato|Depakene|Depakote
+Carbamazepine	Carbamazepina	Tegretol
+Lamotrigine	Lamotrigina	Lamictal
+Levetiracetam	Levetiracetam	Keppra
+Gabapentin	Gabapentina	Neurontin
+Pregabalin	Pregabalina	Lyrica
+Topiramate	Topiramato	Topamax
+Methylphenidate	Metilfenidato	Ritalin|Concerta
+Lisdexamfetamine	Lisdexanfetamina	Vyvanse
+Atomoxetine	Atomoxetina	Strattera
+Modafinil	Modafinilo
+Sumatriptan	Sumatriptán	Imitrex
+Ergotamine	Ergotamina	Cafergot
+Sildenafil	Sildenafilo	Viagra
+Tadalafil	Tadalafilo	Cialis
+Tamsulosin	Tamsulosina
+Finasteride	Finasterida
+Ethinylestradiol	Etinilestradiol	Anticonceptivo|Pastilla anticonceptiva|Yasmin|Diane
+Levonorgestrel	Levonorgestrel	Pastilla del día siguiente|Postinor
+Drospirenone	Drospirenona	Yasmin
+Medroxyprogesterone acetate	Medroxiprogesterona	Depo-Provera
+Isotretinoin	Isotretinoína	Roaccutan
+Allopurinol	Alopurinol	Zyloprim
+Colchicine	Colchicina
+Alendronic acid	Ácido alendrónico	Alendronato|Fosamax
+Ferrous sulfate anhydrous	Sulfato ferroso	Hierro
+Folic acid	Ácido fólico
+Cyanocobalamin	Vitamina B12
+Cholecalciferol	Vitamina D	Vitamina D3
+Ascorbic acid	Vitamina C	Redoxon
+Calcium carbonate	Carbonato de calcio	Calcio|Tums
+Magnesium hydroxide	Hidróxido de magnesio	Leche de magnesia|Milanta
+Dextromethorphan	Dextrometorfano	Jarabe para la tos
+Pseudoephedrine	Pseudoefedrina
+Phenylephrine	Fenilefrina	Antigripal
+Ambroxol	Ambroxol	Mucosolvan
+Guaifenesin	Guaifenesina
+Melatonin	Melatonina
+Cyclosporine	Ciclosporina
+Tacrolimus	Tacrolimus
+Methotrexate	Metotrexato
+Hydroxychloroquine	Hidroxicloroquina	Plaquenil
+Disulfiram	Disulfiram	Antabus
+Theophylline	Teofilina
+Naltrexone	Naltrexona
+Varenicline	Vareniclina	Champix
+Nicotine	Nicotina	Parche de nicotina|Chicle de nicotina
+St. John's Wort	Hierba de San Juan	Hipérico
+Valerian	Valeriana
+Ginkgo biloba	Ginkgo
+Omega-3 fatty acids	Omega 3	Aceite de pescado
+# --- VIH (TLD y otros esquemas; las marcas compartidas se registran como un solo producto) ---
+Tenofovir disoproxil	Tenofovir	Acriptega|TDF|Tenofovir disoproxilo|Viread|TLD|TDF/3TC/DTG|Tenofovir + Lamivudina + Dolutegravir|Tenofovir/Lamivudina/Dolutegravir|Truvada|TLE|Tenofovir/Lamivudina/Efavirenz
+Tenofovir alafenamide	Tenofovir alafenamida	TAF|Descovy|Biktarvy|Vemlidy
+Lamivudine	Lamivudina	Acriptega|3TC|Epivir|TLD|TDF/3TC/DTG|Tenofovir + Lamivudina + Dolutegravir|Tenofovir/Lamivudina/Dolutegravir|Dovato|Triumeq|TLE|Tenofovir/Lamivudina/Efavirenz
+Dolutegravir	Dolutegravir	Acriptega|DTG|Tivicay|TLD|TDF/3TC/DTG|Tenofovir + Lamivudina + Dolutegravir|Tenofovir/Lamivudina/Dolutegravir|Dovato|Triumeq
+Emtricitabine	Emtricitabina	FTC|Truvada|Descovy|Biktarvy
+Bictegravir	Bictegravir	BIC|Biktarvy
+Abacavir	Abacavir	ABC|Triumeq
+Efavirenz	Efavirenz	EFV|TLE|Tenofovir/Lamivudina/Efavirenz
+Mefenamic acid	Ácido mefenámico	Ponstan

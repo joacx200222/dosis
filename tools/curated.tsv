@@ -1,0 +1,95 @@
+# dosis curated table: well-known interactions that DDInter / TripSit miss or only cover through a proxy.
+# General reference, NOT exhaustive. The app still shows every substance as at least "moderada".
+# ingredients (DDInter English names, separated by |)	SUBSTANCE (or several, separated by |)	major|moderate|minor	descripción (español)
+
+# --- Toronja (grapefruit: blocks CYP3A4 in the gut, raises blood levels) ---
+Simvastatin|Lovastatin	GRAPEFRUIT	major	La toronja sube mucho el nivel de la estatina: riesgo de dolor y daño muscular.
+Atorvastatin	GRAPEFRUIT	moderate	La toronja sube el nivel de la estatina; evita grandes cantidades.
+Felodipine|Nimodipine|Nisoldipine	GRAPEFRUIT	major	La toronja sube el nivel del medicamento: presión muy baja, mareo.
+Nifedipine|Amlodipine|Verapamil	GRAPEFRUIT	moderate	La toronja puede subir el nivel del medicamento y bajar más la presión.
+Cyclosporine|Tacrolimus|Sirolimus|Everolimus	GRAPEFRUIT	major	La toronja altera el nivel del inmunosupresor de forma impredecible.
+Amiodarone|Dronedarone	GRAPEFRUIT	major	La toronja sube el nivel del antiarrítmico: riesgo de arritmias.
+Colchicine	GRAPEFRUIT	major	La toronja puede subir la colchicina a niveles tóxicos.
+Lurasidone|Ticagrelor|Ivabradine|Lomitapide	GRAPEFRUIT	major	La toronja sube mucho el nivel del medicamento; evítala.
+Buspirone|Sildenafil|Tadalafil|Vardenafil|Carbamazepine|Midazolam|Triazolam|Quetiapine|Oxycodone|Fentanyl|Methadone|Budesonide|Domperidone|Rivaroxaban|Cilostazol|Ranolazine	GRAPEFRUIT	moderate	La toronja puede subir el nivel del medicamento y sus efectos secundarios.
+Clopidogrel	GRAPEFRUIT	moderate	La toronja puede reducir el efecto del clopidogrel.
+
+# --- Lácteos (calcium binds the medicine and blocks absorption) ---
+Tetracycline|Demeclocycline|Oxytetracycline|Doxycycline|Minocycline	DAIRY	moderate	La leche y el calcio reducen la absorción: tómalo 2 h antes o después de lácteos.
+Ciprofloxacin|Norfloxacin|Ofloxacin|Levofloxacin|Moxifloxacin	DAIRY	moderate	Los lácteos reducen la absorción del antibiótico: sepáralos unas 2 h.
+Levothyroxine	DAIRY	moderate	Lácteos, calcio y café reducen la absorción: tómala en ayunas con agua.
+Alendronic acid|Risedronic acid|Ibandronate	DAIRY	major	Con leche casi no se absorbe: tómalo en ayunas, solo con agua.
+Ferrous sulfate anhydrous|Ferrous fumarate|Ferrous gluconate	DAIRY	moderate	El calcio de los lácteos reduce la absorción del hierro.
+Eltrombopag	DAIRY	major	El calcio bloquea la absorción: separa los lácteos al menos 4 h.
+Dolutegravir|Raltegravir|Bictegravir	DAIRY	moderate	El calcio reduce la absorción si no se toma con comida; sepáralos.
+Penicillamine	DAIRY	moderate	Los lácteos reducen la absorción; sepáralos.
+
+# --- Cafeína ---
+Theophylline|Aminophylline	CAFFEINE	moderate	Se suman efectos: nervios, taquicardia, temblor.
+Ciprofloxacin|Fluvoxamine	CAFFEINE	moderate	Frena la eliminación de la cafeína: más nervios e insomnio.
+Lithium carbonate	CAFFEINE	moderate	Cambiar de golpe cuánto café tomas altera el nivel de litio.
+Clozapine	CAFFEINE	moderate	La cafeína sube el nivel de clozapina; mantén un consumo estable.
+Methylphenidate|Amphetamine|Dextroamphetamine|Lisdexamfetamine|Pseudoephedrine|Ephedrine|Phentermine	CAFFEINE	moderate	Se suman estimulantes: taquicardia, ansiedad, presión alta.
+Adenosine|Dipyridamole	CAFFEINE	moderate	La cafeína reduce el efecto del medicamento.
+
+# --- Tabaco (smoking speeds up CYP1A2; nicotine itself is in DDInter) ---
+Clozapine	TOBACCO	major	Fumar baja mucho el nivel de clozapina; dejar de fumar de golpe lo sube a niveles tóxicos.
+Olanzapine|Haloperidol|Chlorpromazine|Fluvoxamine|Duloxetine|Ropinirole|Tizanidine|Mexiletine	TOBACCO	moderate	Fumar acelera la eliminación del medicamento; dejar de fumar lo sube.
+Theophylline	TOBACCO	moderate	Fumar baja el nivel de teofilina; dejar de fumar lo sube.
+Ethinylestradiol|Drospirenone|Levonorgestrel|Norethisterone	TOBACCO	major	Fumar con anticonceptivos hormonales sube el riesgo de trombosis e infarto, sobre todo después de los 35.
+Erlotinib	TOBACCO	major	Fumar baja mucho el nivel del medicamento.
+
+# --- Alcohol (gaps beyond DDInter "Ethanol") ---
+Metronidazole|Tinidazole|Disulfiram	ALCOHOL	major	Reacción fuerte con el alcohol: vómitos, taquicardia, enrojecimiento. Evítalo hasta 3 días después.
+Acetaminophen	ALCOHOL	major	Alcohol + paracetamol: más riesgo de daño al hígado.
+Metformin	ALCOHOL	moderate	Más riesgo de acidosis láctica y de azúcar baja.
+Glyburide|Glimepiride|Glipizide|Insulin glargine|Insulin human	ALCOHOL	moderate	El alcohol puede causar azúcar muy baja.
+Zolpidem|Zopiclone|Eszopiclone	ALCOHOL	major	Sedación fuerte, sonambulismo y depresión respiratoria.
+Nitroglycerin|Isosorbide mononitrate|Isosorbide dinitrate	ALCOHOL	moderate	Presión muy baja y desmayos.
+
+# --- Cannabis ---
+Warfarin	CANNABIS	moderate	El cannabis puede subir el efecto anticoagulante: más sangrado.
+Clobazam|Tacrolimus	CANNABIS	moderate	El cannabis puede subir el nivel del medicamento.
+Theophylline	CANNABIS	moderate	Fumar cannabis acelera la eliminación de teofilina.
+
+# --- Cocaína ---
+Propranolol|Metoprolol|Atenolol|Carvedilol|Bisoprolol|Labetalol|Nebivolol|Nadolol	COCAINE	major	Betabloqueador + cocaína: la presión puede subir peligrosamente y el corazón sufre más.
+Sumatriptan|Rizatriptan|Zolmitriptan|Naratriptan|Eletriptan|Ergotamine	COCAINE	major	Ambos contraen los vasos: riesgo de infarto o derrame.
+Bupropion	COCAINE	major	Más riesgo de convulsiones.
+Sildenafil|Tadalafil|Vardenafil	COCAINE	moderate	Más carga para el corazón.
+Ritonavir|Cobicistat	COCAINE	moderate	Puede alterar el nivel de cocaína y su toxicidad.
+
+# --- Anfetaminas / MDMA / catinonas ---
+Propranolol|Metoprolol|Atenolol|Carvedilol|Bisoprolol|Labetalol|Nebivolol	AMPHETAMINES	moderate	Estimulante + betabloqueador: presión inestable.
+Sumatriptan|Rizatriptan|Zolmitriptan|Tramadol|Linezolid|Ondansetron	MDMA	major	Riesgo de síndrome serotoninérgico (fiebre, rigidez, confusión).
+Ritonavir|Cobicistat	MDMA	major	Inhibe la eliminación de MDMA: se han descrito intoxicaciones graves.
+Ritonavir|Cobicistat	GHB	major	Inhibe la eliminación de GHB: riesgo de sobredosis.
+Bupropion	MDMA	major	Más riesgo de convulsiones y de toxicidad.
+Bupropion	MEPHEDRONE	major	Más riesgo de convulsiones.
+Sumatriptan|Rizatriptan|Zolmitriptan|Tramadol|Linezolid	MEPHEDRONE	major	Riesgo de síndrome serotoninérgico.
+
+# --- Poppers (alkyl nitrites; Amyl Nitrite is in DDInter as proxy) ---
+Sildenafil|Tadalafil|Vardenafil|Avanafil	POPPERS	major	Poppers + Viagra/Cialis: caída brusca de la presión, desmayo, infarto. Nunca juntos.
+Nitroglycerin|Isosorbide mononitrate|Isosorbide dinitrate|Riociguat	POPPERS	major	Dos nitratos: presión peligrosamente baja.
+Propranolol|Metoprolol|Atenolol|Amlodipine|Losartan|Enalapril|Hydrochlorothiazide|Tamsulosin	POPPERS	moderate	Se suma la bajada de presión: mareo y desmayo.
+
+# --- Ayahuasca (DMT + harmala MAOI) ---
+Fluoxetine|Sertraline|Paroxetine|Citalopram|Escitalopram|Fluvoxamine|Venlafaxine|Desvenlafaxine|Duloxetine|Clomipramine|Amitriptyline|Trazodone|Mirtazapine|Bupropion|Tramadol|Dextromethorphan|Linezolid|Sumatriptan|Rizatriptan|Zolmitriptan|Ondansetron|Meperidine|Methadone|Fentanyl	AYAHUASCA	major	La ayahuasca contiene un IMAO (harmala): con este medicamento hay riesgo de síndrome serotoninérgico o crisis hipertensiva.
+Amphetamine|Dextroamphetamine|Lisdexamfetamine|Methylphenidate|Pseudoephedrine|Phenylephrine|Ephedrine|Phentermine|Levodopa	AYAHUASCA	major	IMAO de la ayahuasca + estimulante: riesgo de crisis hipertensiva.
+Lithium carbonate	AYAHUASCA	major	Más riesgo de convulsiones y reacciones graves.
+
+# --- San Pedro / mescalina ---
+Propranolol|Metoprolol|Atenolol	MESCALINE	moderate	La mescalina sube presión y pulso; puede interferir con el tratamiento.
+
+# --- Suplementos y hierbas (gaps beyond DDInter) ---
+Levothyroxine	SUPPLEMENTS	moderate	Calcio, hierro, magnesio y soya reducen su absorción: sepáralos 4 h.
+Tetracycline|Doxycycline|Minocycline|Ciprofloxacin|Levofloxacin|Moxifloxacin	SUPPLEMENTS	moderate	Calcio, hierro, magnesio y zinc bloquean la absorción: sepáralos unas 2-4 h.
+Spironolactone|Enalapril|Lisinopril|Captopril|Losartan|Valsartan	SUPPLEMENTS	moderate	Suplementos de potasio o sales "light" pueden subir el potasio a niveles peligrosos.
+Warfarin	SUPPLEMENTS	moderate	Vitamina K, ginkgo, ajo, omega 3 y otras hierbas cambian el efecto anticoagulante.
+Ethinylestradiol|Levonorgestrel|Drospirenone	SUPPLEMENTS	major	La hierba de San Juan puede cortar el efecto anticonceptivo.
+
+# --- VIH: TLD (tenofovir disoproxil + lamivudina + dolutegravir) ---
+Dolutegravir	SUPPLEMENTS	major	Calcio, hierro, magnesio, zinc y multivitamínicos bloquean el dolutegravir: tómalo 2 h antes o 6 h después (o junto con comida si el suplemento es calcio o hierro). La hierba de San Juan está contraindicada.
+Dolutegravir	DAIRY	moderate	Con mucho calcio (leche, yogur) en ayunas se absorbe menos; tómalo con comida o sepáralo unas horas.
+Tenofovir disoproxil|Lamivudine|Dolutegravir	ALCOHOL	minor	Sin interacción directa importante con el TLD. El alcohol en exceso afecta al hígado y hace más fácil olvidar dosis.
+Tenofovir disoproxil|Lamivudine|Dolutegravir	CANNABIS|COCAINE|AMPHETAMINES|MDMA|MEPHEDRONE|KETAMINE|GHB|POPPERS|LSD|MUSHROOMS	minor	Sin interacción importante esperada con el TLD (no lleva potenciador como ritonavir o cobicistat). El riesgo es el de la droga en sí; el uso frecuente hace más fácil olvidar dosis.

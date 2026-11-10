@@ -1,0 +1,19 @@
+.gradle/
+build/
+.kotlin/
+local.properties
+.idea/
+*.iml
+captures/
+.DS_Store
+# Raw downloads (DDInter CSVs, TripSit combos.json); rebuild with tools/build_interactions.py
+tools/raw/
+
+# Local crash logs and caches
+hs_err_pid*.log
+__pycache__/
+*.pyc
+
+# Generated interaction data: mixes DDInter (CC BY-NC-SA) and TripSit (no declared license),
+# so it is not redistributed. Rebuild it with tools/build_interactions.py (see data/README.md).
+data/generated/
