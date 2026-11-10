@@ -1,0 +1,23 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  shared-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+      - uses: gradle/actions/setup-gradle@v4
+      # BundledDataTest needs data/generated/interactions.tsv, which is not published (see NOTICE.md).
+      - run: >
+          ./gradlew :shared:jvmTest --console=plain
+          --tests 'app.dosis.core.InteractionEngineTest'
+          --tests 'app.dosis.core.RemindersTest'
+          --tests 'app.dosis.core.ScheduleAndJournalTest'

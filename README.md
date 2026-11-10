@@ -1,7 +1,35 @@
 # dosis
 
-Diario personal de medicinas para **Android (Galaxy S23 + Tab S11)**, **Wear OS (Galaxy Watch4)** y **web**.
+[![tests](https://github.com/joacx200222/dosis/actions/workflows/tests.yml/badge.svg)](https://github.com/joacx200222/dosis/actions/workflows/tests.yml)
+![Kotlin Multiplatform](https://img.shields.io/badge/Kotlin-Multiplatform-7F52FF)
+![Platforms](https://img.shields.io/badge/Android%20%C2%B7%20Wear%20OS%20%C2%B7%20Web-3DDC84)
+[![License: MIT](https://img.shields.io/badge/code-MIT-blue)](LICENSE)
+
+> **EN:** Personal medication journal for Android (phone + tablet), Wear OS and the web, built with
+> Kotlin Multiplatform. Before logging a dose it warns about interactions with everything in your
+> cabinet and, always, with alcohol, tobacco, 25 recreational drugs, foods and supplements. Medicine
+> search covers ~7,700 active ingredients and ~20,000 brands built from DDInter, TripSit, CIMA,
+> INVIMA and RxNorm. Reminders use exact alarms, a full-screen "strong" alert and 30-minute follow-ups.
+
+Diario personal de medicinas para **Android (celular y tableta)**, **Wear OS** y **web**.
 Un solo núcleo en Kotlin Multiplatform; cada plataforma tiene su propia interfaz.
+
+```mermaid
+flowchart LR
+  subgraph tools[tools/ · Python]
+    S[(DDInter · TripSit<br/>CIMA · INVIMA · RxNorm)] --> B[build_interactions.py] --> T[interactions.tsv]
+  end
+  subgraph shared[shared · Kotlin Multiplatform]
+    P[Parser + DrugLexicon] --> E[InteractionEngine]
+    J[Journal] --> E
+    R[ReminderPlanner]
+  end
+  T --> P
+  shared --> A[Android<br/>celular + tableta]
+  shared --> W[Wear OS]
+  shared --> X[Web · Wasm]
+  A -->|AlarmManager| N[Recordatorios]
+```
 
 ## Estructura
 
